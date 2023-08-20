@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -29,4 +31,61 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 /* CSS Reset ^^ */
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFE1A8;
+}
 
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #C9CBA3;
+  border-bottom: 4px solid #E26D5C;
+}
+
+.logo {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.nav-links {
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #0088a9;
+}
+
+.contact {
+  border-left: 1px solid black;
+  padding: 5px 0;
+}
+
+.contact button {
+  cursor: pointer;
+  background-color: rgba(226,109,92,1);
+  border-radius: 15px;
+  border: none;
+  padding: 2px 12px;
+  transition: background-color 0.25s ease 0s;
+  margin-left: 10px;
+}
+
+.contact button:hover {
+  background-color: rgba(226,109,92,0.9);
+}
