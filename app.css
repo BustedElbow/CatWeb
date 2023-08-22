@@ -40,9 +40,33 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 15px 50px;
+  padding: 10px 50px;
   background-color: #C9CBA3;
   border-bottom: 4px solid #E26D5C;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
+  z-index: 12;
+}
+
+.img-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.logo-image {
+  display: inline-block;
+  height: auto;
+  transform: scale(1.6);
+  width: 100px;
+  position: relative;
+  top: 11px;
 }
 
 .logo {
@@ -59,21 +83,26 @@ header {
 
 .nav-links li {
   display: inline-block;
-  padding-right: 15px;
+  padding-right: 6px;
 }
 
 .nav-links li a {
+  color: #0088a9;
   text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 15px;
   transition: all 0.3s ease 0s;
 }
 
 .nav-links li a:hover {
-  color: #0088a9;
+  color: black;
+  background-color: #E26D5C;
 }
 
 .contact {
   border-left: 1px solid black;
   padding: 5px 0;
+  margin-left: 5px;
 }
 
 .contact button {
@@ -82,10 +111,34 @@ header {
   border-radius: 15px;
   border: none;
   padding: 2px 12px;
-  transition: background-color 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
   margin-left: 10px;
 }
 
 .contact button:hover {
   background-color: rgba(226,109,92,0.9);
+  
+}
+
+main {
+  position: relative;
+  margin-top: 62px;
+}
+
+/* .placeholder {
+  margin-top: 75px;
+} */
+.main {
+  display: flex;
+  border: 1px black solid;
+  margin: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.container-main {
+  display: inline-block;
+  border: 1px solid black;
+  width: 40%;
+  margin: 50px;
 }
